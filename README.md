@@ -1,73 +1,227 @@
-# Welcome to your Lovable project
+# Sistema Dental Tovar 🦷
 
-## Project info
+Sistema web moderno para la gestión de clínica dental, diseñado para optimizar el control de pacientes, citas, tratamientos y procesos administrativos de forma eficiente, rápida y centralizada.
 
-**URL**: https://lovable.dev/projects/4c189e29-33e7-4aba-9fe0-d5542c18c4a3
+---
 
-## How can I edit this code?
+## 🌐 Demo en Producción
 
-There are several ways of editing your application.
+🚀 [Ver Sistema en Vivo](https://sistemadentaltovar.vercel.app/)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4c189e29-33e7-4aba-9fe0-d5542c18c4a3) and start prompting.
+## 👨‍💻 Sobre el Proyecto
 
-Changes made via Lovable will be committed automatically to this repo.
+Este sistema fue desarrollado para digitalizar la gestión de una clínica dental, permitiendo:
 
-**Use your preferred IDE**
+- Gestión de pacientes
+- Programación de citas
+- Control de tratamientos
+- Registro clínico
+- Administración operativa
+- Optimización del flujo de atención
+- Centralización de información médica
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+El objetivo principal es mejorar la eficiencia operativa y la experiencia del paciente mediante una plataforma web moderna.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🚀 Características Principales
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🦷 Gestión de Pacientes
+- Registro de pacientes
+- Historial clínico
+- Seguimiento de tratamientos
+- Control de evolución médica
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 📅 Gestión de Citas
+- Programación de citas médicas
+- Reprogramación y cancelación
+- Agenda por doctor
+- Control de disponibilidad
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🧾 Gestión Clínica
+- Registro de tratamientos dentales
+- Diagnósticos clínicos
+- Evolución del paciente
+- Observaciones médicas
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 📊 Dashboard Administrativo
+- Indicadores de atención
+- Control de citas diarias
+- Métricas de pacientes
+- Reportes operativos
+
+### 🔔 Notificaciones
+- Recordatorios de citas
+- Alertas de seguimiento
+- Actualizaciones de estado
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+### Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+
+### Backend & Servicios
+- Supabase
+- PostgreSQL
+- API REST
+
+### Librerías Principales
+- React Router
+- React Query
+- React Hook Form
+- date-fns
+- Lucide React
+
+---
+
+## 📂 Estructura del Proyecto
+
+```bash
+src/
+├── components/
+├── pages/
+├── hooks/
+├── services/
+├── integrations/
+├── lib/
+├── utils/
+└── assets/
+```
+
+---
+
+## ⚙️ Instalación Local
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/rdmezalazo/sistemadentaltovar.git
+```
+
+### 2. Ingresar al proyecto
+
+```bash
+cd sistemadentaltovar
+```
+
+### 3. Instalar dependencias
+
+```bash
+npm install
+```
+
+### 4. Configurar variables de entorno
+
+Crear archivo `.env`:
+
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### 5. Ejecutar en desarrollo
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🏗️ Build de Producción
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Vista previa local:
 
-## What technologies are used for this project?
+```bash
+npm run preview
+```
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## ☁️ Despliegue
 
-## How can I deploy this project?
+El proyecto se encuentra desplegado en:
 
-Simply open [Lovable](https://lovable.dev/projects/4c189e29-33e7-4aba-9fe0-d5542c18c4a3) and click on Share -> Publish.
+- Vercel: https://sistemadentaltovar.vercel.app/
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 🔐 Seguridad
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- Autenticación de usuarios
+- Control de acceso por roles
+- Protección de rutas
+- Variables de entorno seguras
+- Integración con Supabase Auth
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 📈 Funcionalidades del Sistema
+
+| Módulo | Estado |
+|---|---|
+| Gestión de Pacientes | ✅ |
+| Gestión de Citas | ✅ |
+| Historia Clínica | ✅ |
+| Dashboard | ✅ |
+| Notificaciones | ✅ |
+| Administración | ✅ |
+
+---
+
+## 📌 Scripts Disponibles
+
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run lint
+```
+
+---
+
+## 🔄 Flujo de Trabajo Git
+
+```bash
+git add .
+git commit -m "actualización"
+git push
+```
+
+---
+
+## 📄 Licencia
+
+Proyecto de uso privado para gestión clínica.
+
+---
+
+## 👨‍💻 Autor
+
+**Ronald Meza Lazo**
+
+- 🌐 Web: https://sistemadentaltovar.vercel.app/
+- 💻 GitHub: https://github.com/rdmezalazo
+- 🔗 LinkedIn: https://www.linkedin.com/in/ronald-meza-lazo-2791a155/
+
+---
+
+## ⭐ Estado del Proyecto
+
+Sistema en desarrollo activo orientado a la digitalización de procesos clínicos odontológicos y mejora de la gestión de atención al paciente.
+
+---
+
+Repositorio oficial:
+https://github.com/rdmezalazo/sistemadentaltovar
